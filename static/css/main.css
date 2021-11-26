@@ -1,4 +1,10 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
+    margin-top: 1cm !important;
+    background-color: #00adcd !important;
+  
+}
+
+.app {
+    color: white;
+    font-weight: bold;
 }

@@ -5,12 +5,26 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
-    <h1>Telefone</h1>
-
+<div class=" app container-md">
+    <figure class="text-center">
+        <img src=" {{url_for('static', filename='images/logo_whats.png')}} " height="100" weight="100"/>       
+    </figure>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>Abra direto a conversa do WhatsApp <br> Rápido, Fácil e Grátis!</p>
+        </blockquote>
+        <!-- <figcaption class="blockquote-footer">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption> -->
+      </figure>
+      <br><br>
     <form action="/" method="post">
-        <input type="number" name="telefone" id="telefone"/>
-        <input type="submit" value="Go Whats"/>
+        <div class="col-sm-5">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="number" name="telefone" id="telefone" class="form-control"/>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary"><b>Go Whats</b></button>
     </form>
 </div>
 {% endblock %}
